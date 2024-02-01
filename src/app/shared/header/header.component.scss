@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0a66c2;
+    color: #fff;
+    height: 70px; /* Adjust the height as needed */
+  }
+  
+  .logo img {
+    max-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+nav ul li:last-child {
+    margin-right: 0;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+  
+  nav ul li a:hover {
+    color: #ffd700; /* Change to your desired hover color */
+  }
+  .company-name {
+    margin-right: 72%;/* Adjust the spacing as needed */
+    font-family: sans-serif;
+    font-size: 20px;
+    cursor: pointer;  /* Adjust the font size as needed */
+  }
+  
