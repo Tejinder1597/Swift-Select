@@ -8,6 +8,11 @@ import { JobApplyComponent } from './container/usermodal/job-apply/job-apply.com
 const routes: Routes = [
   {
     path: "",
+    redirectTo: "careers", // Redirect to the careers path
+    pathMatch: "full" // Ensure that the full path is matched for redirection
+  },
+  {
+    path: "",
     component: MainlayoutComponent,
     children: [
       {

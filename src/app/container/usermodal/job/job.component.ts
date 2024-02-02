@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Job } from 'src/app/interfaces/job';
 import { JobOverviewService } from 'src/app/services/job-overview.service';
 import { JobService } from 'src/app/services/job.service';
+import { faMapMarkerAlt, faUserClock } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-job',
@@ -10,7 +11,7 @@ import { JobService } from 'src/app/services/job.service';
   styleUrls: ['./job.component.scss']
 })
 export class JobComponent implements OnInit {
-
+  mapMarker = faMapMarkerAlt;
   jobs: Job[] = [];
 
   constructor(private jobService: JobService, private jobOverview: JobOverviewService, private router: Router) { }
