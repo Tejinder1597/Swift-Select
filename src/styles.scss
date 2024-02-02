@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+/* Custom styles for PrimeNG toast notifications */
+.p-toast-message {
+    background-color: #0be94d; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 14px; 
+    line-height: 1.5;
+}
+
+/* Custom styles for toast icons */
+.p-toast-message .p-toast-icon {
+    background-color: #0be94d;
+    color: #161616; 
+}
+
+/* Custom styles for cancel button icon */
+.p-toast-message .p-toast-icon-close {
+    border: none;
+    color: #000000; 
+}
+
+/* Custom styles for different types of messages */
+.p-toast-message.p-toast-message-warn {
+    background-color: #ffc107; 
+    color: #000000; 
+}
+
+.p-toast-message.p-toast-message-error {
+    background-color: #dc3545; 
+    color: #ffffff;
+}
+
+.p-toast-message.p-toast-message-info {
+    background-color: #17a2b8; 
+    color: #ffffff; 
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

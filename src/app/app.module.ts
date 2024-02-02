@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { MainlayoutComponent } from './shared/mainlayout/mainlayout.component';
-
+import { UsermodalModule } from './container/usermodal/usermodal.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,8 @@ import { MainlayoutComponent } from './shared/mainlayout/mainlayout.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UsermodalModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,16 @@
+<!-- job-apply-form.component.html -->
+<form>
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="firstName">
+
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email">
+
+    <label for="applyingFor">Applying For</label>
+    <input type="text" id="applyingFor" name="applyingFor" [value]="applyingFor" readonly>
+
+    <button type="submit">Submit</button>
+</form>

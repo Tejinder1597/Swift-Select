@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+import { MainlayoutComponent } from 'src/app/shared/mainlayout/mainlayout.component';
+import { JobComponent } from './job/job.component';
+import { JobOverviewComponent } from './job-overview/job-overview.component';
+import { JobApplyComponent } from './job-apply/job-apply.component';
 
 
+const routes: Routes = [
+
+];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 export class UsermodalRoutingModule { }

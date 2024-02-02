@@ -1,0 +1,32 @@
+<!-- careers-overview.component.html -->
+<div *ngIf="jobDetail" class="job-details-container">
+    <h2>{{ jobDetail.positionOverview }}</h2>
+    <div class="job-details-section">
+        <h3>Responsibilities:</h3>
+        <ul>
+            <li *ngFor="let responsibility of jobDetail.responsibilities">{{ responsibility }}</li>
+        </ul>
+    </div>
+    <div class="job-details-section">
+        <h3>Qualifications:</h3>
+        <ul>
+            <li *ngFor="let qualification of jobDetail.qualifications">{{ qualification }}</li>
+        </ul>
+    </div>
+    <div class="job-details-section">
+        <h3>Requirements:</h3>
+        <ul>
+            <li *ngFor="let requirement of jobDetail.requirements">{{ requirement }}</li>
+        </ul>
+    </div>
+    <div class="job-details-section">
+        <h3>Key Competencies:</h3>
+        <ul>
+            <li *ngFor="let competency of jobDetail.keyCompetencies">{{ competency }}</li>
+        </ul>
+    </div>
+    <footer class="button-container">
+        <button class="cancel-button" (click)="cancel()">Cancel</button>
+        <button class="apply-button" (click)="applyNow()">Apply Now</button>
+    </footer>
+</div>
