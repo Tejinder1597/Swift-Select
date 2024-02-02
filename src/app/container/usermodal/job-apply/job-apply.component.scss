@@ -23,16 +23,18 @@ form {
   label {
     display: block;
     font-weight: bold;
+   
   }
   
   input[type="text"],
   input[type="email"],
   textarea,
   input[type="file"] {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 5px;
   }
   
   textarea {

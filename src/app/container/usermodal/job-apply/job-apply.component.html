@@ -12,5 +12,18 @@
     <label for="applyingFor">Applying For</label>
     <input type="text" id="applyingFor" name="applyingFor" [value]="applyingFor" readonly>
 
+    <label for="resume">Upload Resume</label>
+    <input type="file" id="resume" name="resume">
+
+    <label for="video">AI Enable Video</label>
+    <small><a href="javascript:void(0)" (click)="openDialog()">What's this?</a></small>
+
+    <br>
+    <input type=" checkbox" id="checkbox1" name="checkbox1">
+    <label for="checkbox1">Checkbox 1</label>
+    <br>
+    <input type="checkbox" id="checkbox2" name="checkbox2">
+    <label for="checkbox2">Checkbox 2</label>
     <button type="submit">Submit</button>
+    <button type="submit" (click)="goBack()">Back</button>
 </form>

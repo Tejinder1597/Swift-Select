@@ -1,0 +1,68 @@
+<!-- login.component.html -->
+<div class="container">
+    <div *ngIf="!showSignup">
+        <h2>Login</h2>
+        <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" formControlName="email" class="form-control" placeholder="Enter email">
+                <div
+                    *ngIf="loginForm.get('email')?.invalid && (loginForm.get('email')?.dirty || loginForm.get('email')?.touched)">
+                    <div *ngIf="loginForm.get('email')?.errors?.['required']" class="text-danger">Email is required.
+                    </div>
+                    <div *ngIf="loginForm.get('email')?.errors?.['email'] && !loginForm.get('email')?.errors?.['required']"
+                        class="text-danger">Invalid email format.</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" formControlName="password" class="form-control" placeholder="Enter password">
+                <div
+                    *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.dirty || loginForm.get('password')?.touched)">
+                    <div *ngIf="loginForm.get('password')?.errors?.['required']" class="text-danger">Password is
+                        required.
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="button" class="btn btn-link" (click)="showSignupForm()">Sign Up</button>
+        </form>
+    </div>
+
+    <div *ngIf="showSignup">
+        <h2>Sign Up</h2>
+        <form [formGroup]="signupForm" (ngSubmit)="onSignup()">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" formControlName="firstName" class="form-control" placeholder="Enter first name">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" formControlName="lastName" class="form-control" placeholder="Enter last name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" formControlName="email" class="form-control" placeholder="Enter email">
+                <div
+                    *ngIf="signupForm.get('email')?.invalid && (signupForm.get('email')?.dirty || signupForm.get('email')?.touched)">
+                    <div *ngIf="signupForm.get('email')?.errors?.['required']" class="text-danger">Email is required.
+                    </div>
+                    <div *ngIf="signupForm.get('email')?.errors?.['email'] && !signupForm.get('email')?.errors?.['required']"
+                        class="text-danger">Invalid email format.</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" formControlName="password" class="form-control" placeholder="Enter password">
+                <div
+                    *ngIf="signupForm.get('password')?.invalid && (signupForm.get('password')?.dirty || signupForm.get('password')?.touched)">
+                    <div *ngIf="signupForm.get('password')?.errors?.['required']" class="text-danger">Password is
+                        required.
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <button type="button" class="btn btn-link" (click)="showLoginForm()">Back to Login</button>
+        </form>
+    </div>
+</div>

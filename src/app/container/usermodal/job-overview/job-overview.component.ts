@@ -33,7 +33,7 @@ export class JobOverviewComponent implements OnInit {
   // }
   applyNow(): void {
     if (this.jobDetail) {
-      this.router.navigate(['/job-form'], { queryParams: { role: this.jobDetail.positionOverview } });
+      this.router.navigate(['/job-form'], { queryParams: { role: this.jobDetail.positionOverview, returnUrl: this.router.url } });
     } else {
       // Handle case where jobDetail is not available
     }

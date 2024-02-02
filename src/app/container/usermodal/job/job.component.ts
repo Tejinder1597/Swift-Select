@@ -13,12 +13,15 @@ import { faMapMarkerAlt, faUserClock } from '@fortawesome/free-solid-svg-icons';
 export class JobComponent implements OnInit {
   mapMarker = faMapMarkerAlt;
   jobs: Job[] = [];
-
+  filteredJobs: Job[] = [];
+  searchTerm: string = '';
   constructor(private jobService: JobService, private jobOverview: JobOverviewService, private router: Router) { }
 
   ngOnInit(): void {
     this.jobService.getJobs().subscribe(jobs => {
       this.jobs = jobs;
+      this.filteredJobs = jobs;
+      console.log(this.jobs)
     });
   }
   // openJobDetailDialog(jobId: number): void {
@@ -34,6 +37,16 @@ export class JobComponent implements OnInit {
   }
   onJobClick(): void {
     this.router.navigate(['/careers-overview']);
+  }
+  filterJobs(): void {
+    console.log('Filtering jobs...');
+    console.log('Search term:', this.searchTerm);
+    this.filteredJobs = this.jobs.filter(job =>
+      job.role.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+      job.location.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+      job.type.toLowerCase().includes(this.searchTerm.toLowerCase())
+    );
+    console.log('Filtered jobs:', this.filteredJobs);
   }
 
 }

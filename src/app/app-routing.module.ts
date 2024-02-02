@@ -4,6 +4,7 @@ import { MainlayoutComponent } from './shared/mainlayout/mainlayout.component';
 import { JobComponent } from './container/usermodal/job/job.component';
 import { JobOverviewComponent } from './container/usermodal/job-overview/job-overview.component';
 import { JobApplyComponent } from './container/usermodal/job-apply/job-apply.component';
+import { SignInComponent } from './shared/sign-in/sign-in.component';
 
 const routes: Routes = [
   {
@@ -16,11 +17,19 @@ const routes: Routes = [
     component: MainlayoutComponent,
     children: [
       {
+        path: "sign-in",
+        component: SignInComponent
+      },
+      {
         path: "careers",
         component: JobComponent
       },
       {
         path: "careers-overview/:id",
+        component: JobOverviewComponent
+      },
+      {
+        path: "careers-overview",
         component: JobOverviewComponent
       },
       {
