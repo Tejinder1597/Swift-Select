@@ -23,6 +23,7 @@ export class JobComponent implements OnInit {
       this.filteredJobs = jobs;
       console.log(this.jobs)
     });
+
   }
   // openJobDetailDialog(jobId: number): void {
   //   this.jobOverview.getJobDetailById(jobId).subscribe((jobDetail: JobDetail) => {

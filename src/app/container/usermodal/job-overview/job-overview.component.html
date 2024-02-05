@@ -1,6 +1,6 @@
 <!-- careers-overview.component.html -->
 <div *ngIf="jobDetail" class="job-details-container">
-    <h2>{{ jobDetail.positionOverview }}</h2>
+    <h2>{{ jobDetail.role }}</h2>
     <div class="job-details-section">
         <h3>Responsibilities:</h3>
         <ul>
@@ -11,6 +11,12 @@
         <h3>Qualifications:</h3>
         <ul>
             <li *ngFor="let qualification of jobDetail.qualifications">{{ qualification }}</li>
+        </ul>
+    </div>
+    <div class="job-details-section">
+        <h3>skills:</h3>
+        <ul>
+            <li *ngFor="let skills of jobDetail.skills">{{ skills }}</li>
         </ul>
     </div>
     <div class="job-details-section">

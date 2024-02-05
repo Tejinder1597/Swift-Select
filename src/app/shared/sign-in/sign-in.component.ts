@@ -28,12 +28,24 @@ export class SignInComponent implements OnInit {
   }
 
   onLogin() {
-    // Handle login logic
+    if (this.loginForm.valid) {
+      // Form is valid, handle submission here
+      console.log(this.loginForm.value);
+    } else {
+      // Form is invalid, mark fields as touched to display validation messages
+      this.loginForm.markAllAsTouched();
+    }
     console.log("Logging in...");
   }
 
   onSignup() {
-    // Handle sign-up logic
+    if (this.signupForm.valid) {
+      // Form is valid, handle submission here
+      console.log(this.signupForm.value);
+    } else {
+      // Form is invalid, mark fields as touched to display validation messages
+      this.signupForm.markAllAsTouched();
+    }
     console.log("Signing up...");
   }
 
@@ -44,4 +56,7 @@ export class SignInComponent implements OnInit {
   showLoginForm() {
     this.showSignup = false;
   }
+
 }
+
+

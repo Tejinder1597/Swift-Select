@@ -1,0 +1,71 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Post 1",
+      "content": "Content of post 1"
+    },
+    {
+      "id": 2,
+      "title": "Post 2",
+      "content": "Content of post 2"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "text": "Comment 1 on Post 1"
+    },
+    {
+      "id": 2,
+      "postId": 1,
+      "text": "Comment 2 on Post 1"
+    },
+    {
+      "id": 3,
+      "postId": 2,
+      "text": "Comment 1 on Post 2"
+    }
+  ],
+  "applicants": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "applyingFor": "Software Engineer",
+      "resume": "path/to/resume.pdf",
+      "checkbox1": true,
+      "checkbox2": false
+    },
+    {
+      "id": "a0be",
+      "firstName": "chandu",
+      "lastName": "varma",
+      "email": "chandu@gmail.com",
+      "resume": "C:\\fakepath\\sample_pdf.pdf",
+      "checkbox1": true,
+      "checkbox2": false
+    },
+    {
+      "id": "a6ff",
+      "firstName": "chandu",
+      "lastName": "varma",
+      "email": "chandu@gmail.com",
+      "resume": "C:\\fakepath\\sample_pdf.pdf",
+      "checkbox1": true,
+      "checkbox2": false
+    },
+    {
+      "id": "4cd9",
+      "firstName": "chandu",
+      "lastName": "keertipati",
+      "email": "chandu123@gmail.com",
+      "applyingFor": "Software Engineer",
+      "resume": "",
+      "checkbox1": false,
+      "checkbox2": false
+    }
+  ]
+}

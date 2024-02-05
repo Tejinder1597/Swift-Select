@@ -3,4 +3,5 @@ export interface Job {
     role: string;
     location: string;
     type: string;
+    skills: string[];
 }

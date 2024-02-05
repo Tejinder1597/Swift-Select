@@ -5,6 +5,7 @@ import { JobComponent } from './container/usermodal/job/job.component';
 import { JobOverviewComponent } from './container/usermodal/job-overview/job-overview.component';
 import { JobApplyComponent } from './container/usermodal/job-apply/job-apply.component';
 import { SignInComponent } from './shared/sign-in/sign-in.component';
+import { SubmissionConfirmationComponent } from './container/usermodal/submission-confirmation/submission-confirmation.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
       {
         path: "job-form",
         component: JobApplyComponent
+      },
+      {
+        path: "submission-confirmation",
+        component: SubmissionConfirmationComponent
       },
     ]
   },

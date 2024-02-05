@@ -1,29 +1,59 @@
 <!-- job-apply-form.component.html -->
-<form>
-    <label for="firstName">First Name</label>
-    <input type="text" id="firstName" name="firstName">
+<form [formGroup]="jobApplyForm" (ngSubmit)="onSubmit()">
+    <h2>Resume Submission</h2>
+    <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" formControlName="firstName">
+        <div *ngIf="jobApplyForm.get('firstName')?.invalid && jobApplyForm.get('firstName')?.touched"
+            class="text-danger">
+            First Name is required
+        </div>
+    </div>
 
-    <label for="lastName">Last Name</label>
-    <input type="text" id="lastName" name="lastName">
+    <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" formControlName="lastName">
+        <div *ngIf="jobApplyForm.get('lastName')?.invalid && jobApplyForm.get('lastName')?.touched" class="text-danger">
+            Last Name is required
+        </div>
+    </div>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email">
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" formControlName="email">
+        <div *ngIf="jobApplyForm.get('email')?.invalid && jobApplyForm.get('email')?.touched" class="text-danger">
+            Please enter a valid email address
+        </div>
+    </div>
 
-    <label for="applyingFor">Applying For</label>
-    <input type="text" id="applyingFor" name="applyingFor" [value]="applyingFor" readonly>
+    <div class="form-group">
+        <label for="applyingFor">Applying For</label>
+        <input type="text" id="applyingFor" formControlName="applyingFor" [value]="applyingFor" readonly>
+    </div>
 
-    <label for="resume">Upload Resume</label>
-    <input type="file" id="resume" name="resume">
+    <div class="form-group">
+        <label for="resume">Upload Resume</label>
+        <input type="file" id="resume" formControlName="resume">
+    </div>
 
-    <label for="video">AI Enable Video</label>
-    <small><a href="javascript:void(0)" (click)="openDialog()">What's this?</a></small>
-
-    <br>
-    <input type=" checkbox" id="checkbox1" name="checkbox1">
-    <label for="checkbox1">Checkbox 1</label>
-    <br>
-    <input type="checkbox" id="checkbox2" name="checkbox2">
-    <label for="checkbox2">Checkbox 2</label>
-    <button type="submit">Submit</button>
-    <button type="submit" (click)="goBack()">Back</button>
+    <div class="form-group">
+        <label for="video">AI Enable Video</label>
+        <small>To speed up hiring process, we are
+            conducting <a href="javascript:void(0)" (click)="openDialog()">AI led interviews</a>. If you agree
+            to participate in the AI led Interview, we will send you a link for interview
+            within 24 hours of your submission, if your resume is shortlisted for interview.
+            You will have 3 calendar days to complete your interview from the time you
+            get the link for interview. Please select your willingness from the choices
+            below.</small>
+    </div>
+    <div class="checkboxes">
+        <input type="checkbox" formControlName="checkbox1">
+        <label for="checkbox1">Yes, sign me up</label>
+        <input type="checkbox" formControlName="checkbox2">
+        <label for="checkbox2">No, I want to skip for now</label>
+    </div>
+    <div class="footer-buttons">
+        <button type="cancel" (click)="goBack()">Back</button>
+        <button type="submit">Submit</button>
+    </div>
 </form>

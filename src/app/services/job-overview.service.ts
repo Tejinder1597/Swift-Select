@@ -13,7 +13,7 @@ export class JobOverviewService {
     const jobDetails: { [key: number]: JobOverview } = {
       1: {
         id: 1,
-        positionOverview: "The Software Engineer will be responsible for developing high-quality software.",
+        role: "Software Engineer",
         responsibilities: [
           "Write clean, maintainable, and efficient code.",
           "Design robust, scalable, and secure features.",
@@ -35,10 +35,11 @@ export class JobOverviewService {
           "Teamwork",
           "Communication",
         ],
+        skills: ['Java', 'Python', 'JavaScript']
       },
       2: {
         id: 2,
-        positionOverview: "The Data Scientist will analyze complex datasets to provide insights for business decisions.",
+        role: "Data Scientist",
         responsibilities: [
           "Clean and preprocess data for analysis.",
           "Apply statistical and machine learning techniques to analyze data.",
@@ -60,10 +61,11 @@ export class JobOverviewService {
           "Machine Learning",
           "Communication",
         ],
+        skills: ['R', 'Python', 'Machine Learning']
       },
       3: {
         id: 3,
-        positionOverview: "The UX/UI Designer will create intuitive and visually appealing user interfaces.",
+        role: "UX/UI Designer",
         responsibilities: [
           "Create wireframes, prototypes, and mockups for user interfaces.",
           "Collaborate with product management and development teams to understand user needs.",
@@ -85,6 +87,7 @@ export class JobOverviewService {
           "Prototyping",
           "Collaboration",
         ],
+        skills: ['Sketch', 'Figma', 'User Research']
       },
     };
 

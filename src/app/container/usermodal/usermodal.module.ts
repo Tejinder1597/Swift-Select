@@ -6,18 +6,22 @@ import { JobApplyComponent } from './job-apply/job-apply.component';
 import { FormsModule } from '@angular/forms';
 import { AIInterviewInfoComponent } from './ai-interview-info/ai-interview-info.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SubmissionConfirmationComponent } from './submission-confirmation/submission-confirmation.component';
 
 @NgModule({
   declarations: [
     JobComponent,
     JobOverviewComponent,
     JobApplyComponent,
-    AIInterviewInfoComponent
+    AIInterviewInfoComponent,
+    SubmissionConfirmationComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
-    MatDialogModule
+    MatDialogModule,
+    ReactiveFormsModule
   ]
 })
 export class UsermodalModule { }

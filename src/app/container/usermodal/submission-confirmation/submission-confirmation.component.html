@@ -1,0 +1,19 @@
+<!-- submission-confirmation.component.html -->
+<!-- <div class="card">
+    <div class="card-header">Submission Confirmation</div>
+    <p>Thank you {{ firstName }} {{ lastName }} for applying for the {{ applyingFor }} position.</p>
+    <p>You will receive a confirmation email at {{ email }}.</p>
+</div> -->
+
+<div class="card">
+    <div class="card-header">Submission Confirmation</div>
+    <p>Thank you {{ firstName }} {{ lastName }} for your submission for<strong>{{ applyingFor }} </strong>position.</p>
+    <p>Based on your request, if you are shortlisted, you will receive an email from
+        <strong>recruiting@nstarxinc.com</strong> with the link for your AI led interview. Remember you will have 3
+        calendar days to complete your interview. Please add <strong>recruiting@nstarxinc.com</strong> to your safe
+        email list.
+    </p>
+    <p>You will receive your link at: <strong><a [href]="'mailto:' + email">{{ email }}</a></strong>.</p>
+    <p>Talk to you soon.</p>
+    <p><em>Recruiting team @SwiftSelect.</em></p>
+</div>

@@ -9,6 +9,7 @@ import { UsermodalModule } from './container/usermodal/usermodal.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SignInComponent } from './shared/sign-in/sign-in.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     UsermodalModule,
     FormsModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
