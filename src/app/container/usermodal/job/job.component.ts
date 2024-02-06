@@ -45,7 +45,8 @@ export class JobComponent implements OnInit {
     this.filteredJobs = this.jobs.filter(job =>
       job.role.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
       job.location.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
-      job.type.toLowerCase().includes(this.searchTerm.toLowerCase())
+      job.type.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+      job.skills.some(skill => skill.toLowerCase().includes(this.searchTerm.toLowerCase()))
     );
     console.log('Filtered jobs:', this.filteredJobs);
   }
