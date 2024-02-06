@@ -36,7 +36,7 @@
   }
   
   .card-text {
-    margin-bottom: 0;
+    margin-bottom: 5px;
     margin-top: -6px;
   }
   .text-center{
@@ -69,3 +69,8 @@
     font-weight: bold;
     margin-bottom: 5px;
 }
+.material-icons {
+    font-size: 0.9rem; /* Adjust the size as needed */
+    vertical-align: middle; /* Align the icon vertically */
+    margin-right: 5px; /* Add some space between the icon and text */
+  }

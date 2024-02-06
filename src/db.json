@@ -96,6 +96,26 @@
       "resume": "C:\\fakepath\\sample_pdf.pdf",
       "checkbox1": true,
       "checkbox2": false
+    },
+    {
+      "id": "6a0c",
+      "firstName": "suresh",
+      "lastName": "emmani",
+      "email": "suresh123@gmail.com",
+      "applyingFor": "UX/UI Designer",
+      "resume": "C:\\fakepath\\sample_pdf.pdf",
+      "checkbox1": true,
+      "checkbox2": false
+    },
+    {
+      "id": "ec62",
+      "firstName": "ausuthosh",
+      "lastName": "sahu",
+      "email": "ausuthosh@gmail.com",
+      "applyingFor": "Data Scientist",
+      "resume": "C:\\fakepath\\sample_pdf.pdf",
+      "checkbox1": true,
+      "checkbox2": false
     }
   ]
 }

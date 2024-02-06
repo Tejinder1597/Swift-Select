@@ -1,4 +1,5 @@
 <!-- <h1>Available Job Openings</h1> -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <div class="container text-center">
     <h1>Available Job Openings</h1>
     <div class="container d-flex justify-content-center align-items-center vh-100">
@@ -14,11 +15,12 @@
             <div *ngFor="let job of jobs" class="card job-card" (click)="goToJobDetail(job.id)">
                 <div class="card-body">
                     <h6 class="card-title">{{ job.role }}</h6>
-                    <h5 class="card-sub-title">Location:</h5>
+                    <h5 class="card-sub-title"><i class="material-icons">location_on</i>Location:
+                    </h5>
                     <p class="card-text">{{ job.location }}</p>
-                    <h5 class="card-sub-title">Job Type:</h5>
+                    <h5 class="card-sub-title"><i class="material-icons">work</i>Job Type:</h5>
                     <p class="card-text">{{ job.type }}</p>
-                    <h5 class="card-sub-title">Skills:</h5>
+                    <h5 class="card-sub-title"><i class="material-icons">build</i>Skills:</h5>
                     <p class="card-text">{{ job.skills }}</p>
                 </div>
             </div>
