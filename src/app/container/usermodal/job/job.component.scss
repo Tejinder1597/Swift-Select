@@ -22,7 +22,7 @@
   
   .job-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Added stronger shadow on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
   }
   
   .card-body {
@@ -43,8 +43,8 @@
     text-align: center;
   }
   .search-container {
-    width: 200px; /* Adjust the width as needed */
-    height: 40px; /* Adjust the height as needed */
+    width: 200px; 
+    height: 40px; 
     position: relative;
     display: contents;
 }
@@ -54,7 +54,7 @@
     height: 100%;
     padding: 10px;
     border: none;
-    border-radius: 20px; /* half of the height to make it oval */
+    border-radius: 20px; 
     outline: none;
     box-sizing: border-box;
     font-size: 16px;
@@ -62,7 +62,7 @@
     transition: border-color 0.3s;
 }
 .search-input:focus {
-  border: 2px solid #007bff; /* Bright border color when focused */
+  border: 2px solid #007bff; 
 }
 .card-sub-title{
     font-size: 12px;
@@ -70,7 +70,13 @@
     margin-bottom: 5px;
 }
 .material-icons {
-    font-size: 0.9rem; /* Adjust the size as needed */
-    vertical-align: middle; /* Align the icon vertically */
-    margin-right: 5px; /* Add some space between the icon and text */
+    font-size: 0.9rem; 
+    vertical-align: middle; 
+    margin-right: 5px;
   }
+.no-results {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold; 
+    font-size: 18px; 
+}
