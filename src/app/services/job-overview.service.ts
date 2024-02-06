@@ -89,6 +89,32 @@ export class JobOverviewService {
         ],
         skills: ['Sketch', 'Figma', 'User Research']
       },
+      4: {
+        id: 3,
+        role: "UX/UI Designer",
+        responsibilities: [
+          "Create wireframes, prototypes, and mockups for user interfaces.",
+          "Collaborate with product management and development teams to understand user needs.",
+          "Conduct usability testing and gather feedback for iterative design improvements.",
+        ],
+        qualifications: [
+          "Bachelor's degree in Design, HCI, or related field.",
+          "Proficiency in design tools (e.g., Sketch, Adobe XD, Figma).",
+          "Experience with user research and usability testing methods.",
+        ],
+        requirements: [
+          "Strong portfolio showcasing design skills and previous work.",
+          "Ability to work effectively in a collaborative environment.",
+          "Excellent communication and presentation skills.",
+        ],
+        keyCompetencies: [
+          "User Interface Design",
+          "User Experience",
+          "Prototyping",
+          "Collaboration",
+        ],
+        skills: ['Sketch', 'Figma', 'User Research']
+      },
     };
 
     return of(jobDetails[id]);

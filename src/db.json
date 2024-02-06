@@ -66,6 +66,36 @@
       "resume": "",
       "checkbox1": false,
       "checkbox2": false
+    },
+    {
+      "id": "2e02",
+      "firstName": "chandu",
+      "lastName": "varma",
+      "email": "chandu@gmail.com",
+      "applyingFor": "Software Engineer",
+      "resume": "",
+      "checkbox1": false,
+      "checkbox2": false
+    },
+    {
+      "id": "7749",
+      "firstName": "chandu",
+      "lastName": "keertipati",
+      "email": "chandu123@gmail.com",
+      "applyingFor": "Software Engineer",
+      "resume": "C:\\fakepath\\sample_pdf.pdf",
+      "checkbox1": false,
+      "checkbox2": true
+    },
+    {
+      "id": "43cd",
+      "firstName": "vfcbf",
+      "lastName": "bfvcb",
+      "email": "example@example.com",
+      "applyingFor": "Data Scientist",
+      "resume": "C:\\fakepath\\sample_pdf.pdf",
+      "checkbox1": true,
+      "checkbox2": false
     }
   ]
 }
