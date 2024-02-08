@@ -6,11 +6,12 @@ import { JobOverviewComponent } from './container/usermodal/job-overview/job-ove
 import { JobApplyComponent } from './container/usermodal/job-apply/job-apply.component';
 import { SignInComponent } from './shared/sign-in/sign-in.component';
 import { SubmissionConfirmationComponent } from './container/usermodal/submission-confirmation/submission-confirmation.component';
+import { HomeComponent } from './container/usermodal/home/home.component';
 
 const routes: Routes = [
   {
     path: "",
-    redirectTo: "careers", // Redirect to the careers path
+    redirectTo: "home", // Redirect to the careers path
     pathMatch: "full" // Ensure that the full path is matched for redirection
   },
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
       {
         path: "sign-in",
         component: SignInComponent
+      },
+      {
+        path: "home",
+        component: HomeComponent
       },
       {
         path: "careers",

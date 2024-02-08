@@ -116,6 +116,36 @@
       "resume": "C:\\fakepath\\sample_pdf.pdf",
       "checkbox1": true,
       "checkbox2": false
+    },
+    {
+      "id": "ef00",
+      "firstName": "Nstarx",
+      "lastName": "Inc",
+      "email": "nstarx@gmail.com",
+      "applyingFor": "UX/UI Designer",
+      "resume": "C:\\fakepath\\sample_pdf.pdf",
+      "checkbox1": true,
+      "checkbox2": true
+    },
+    {
+      "id": "999e",
+      "firstName": "Nstarx",
+      "lastName": "Inc",
+      "email": "nstarx@gmail.com",
+      "applyingFor": "Software Engineer",
+      "resume": "C:\\fakepath\\sample_pdf.pdf",
+      "checkbox1": true,
+      "checkbox2": false
+    },
+    {
+      "id": "614b",
+      "firstName": "Nstarx",
+      "lastName": "Inc",
+      "email": "nstarx@gmail.com",
+      "applyingFor": "UX/UI Designer",
+      "resume": "",
+      "checkbox1": false,
+      "checkbox2": false
     }
   ]
 }

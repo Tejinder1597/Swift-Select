@@ -8,6 +8,7 @@ import { AIInterviewInfoComponent } from './ai-interview-info/ai-interview-info.
 import { MatDialogModule } from '@angular/material/dialog';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SubmissionConfirmationComponent } from './submission-confirmation/submission-confirmation.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SubmissionConfirmationComponent } from './submission-confirmation/submi
     JobOverviewComponent,
     JobApplyComponent,
     AIInterviewInfoComponent,
-    SubmissionConfirmationComponent
+    SubmissionConfirmationComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
