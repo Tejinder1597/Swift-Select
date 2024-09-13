@@ -3,9 +3,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #0a66c2;
-    color: #fff;
+    background-color:white;
+    color: black;
     height: 70px; /* Adjust the height as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .logo img {
@@ -31,7 +32,7 @@ nav ul li:last-child {
   
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: black;
     transition: color 0.3s ease;
     font-family: sans-serif;
     font-size: 15px;
